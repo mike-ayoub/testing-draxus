@@ -1,6 +1,7 @@
 FROM busybox
 
-RUN echo "Deployment Test Successful" > /www/index.html
+RUN mkdir -p /www && \
+    echo "Deployment Test Successful" > /www/index.html
 
 EXPOSE 8080
 
